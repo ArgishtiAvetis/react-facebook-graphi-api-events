@@ -6,8 +6,9 @@ var events = [];
 //var eventsPhoto = [];
 
 var pagesArray = [
-  'colorsworldwideinc',
-  'omgdessertgoals'
+  'RegentTheaterLA',
+  'newbeverlycinema',
+  'omgdessertgoals',
 ];
 
 class App extends Component {
@@ -30,7 +31,6 @@ class App extends Component {
         //alert(data.data[2].description);
         for(let i = 0; i < data.data.length; i++) {
             events.push(data.data[i]);
-
         }
 
         this.setState({
@@ -64,7 +64,9 @@ class App extends Component {
             <span><b>Location: </b>{(events.place.location != null) ? events.place.location.street : ''}, {(events.place.location != null) ? events.place.location.city : ''}</span>
             <br />
             <span><b>Start time: </b>{events.start_time}</span>
-            <img src={events.photo} alt={events.name} />
+            {/* <img src={events.photo} alt={events.name} /> */}
+            <br />
+            <br />
             <p>
               {events.description}
             </p>
