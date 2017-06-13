@@ -8,7 +8,6 @@ var events = [];
 
 var pagesArray = [
   'RegentTheaterLA',
-  'newbeverlycinema',
   'omgdessertgoals',
 ];
 
@@ -54,7 +53,7 @@ class App extends Component {
     return (
       <div className="container">
         <Navbar />
-        <h1>Events in Los Angeles, California</h1>
+        <h1>Parties in Los Angeles, California</h1>
         {/* <ul>
           {pagesArray.map((pageName, idx) =>
             <li key={idx}>{pageName}</li>
