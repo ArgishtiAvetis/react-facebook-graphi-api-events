@@ -53,6 +53,11 @@ class App extends Component {
     return (
       <div className="container">
         <h1>FACEBOOK EVENTS</h1>
+        <ul>
+          {pagesArray.map((pageName, idx) =>
+            <li key={idx}>{pageName}</li>
+          )}
+        </ul>
         {this.state.events.map((events, idx) =>
           <div key={idx} className="well">
             <h2>{events.name}</h2>
